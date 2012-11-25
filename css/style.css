@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #121212;
+}
+
+ul.fpthumbs{ /*thumbnails main UL list*/
+list-style-type:none;
+margin:0;
+padding:0;
+position:absolute;
+right:15px;
+bottom:0px;
+width: 900px;
+padding: 0 5px;
+}
+
+ul.fpthumbs li{
+display:inline-block;
+left: 0px !important;
+padding: 7px;
+border: 1px solid #0f0f0e;
+background: #1c1b19;
+box-shadow: 0 1px 0 #4d4d4d;
+width:110px !important;
+height:60px !important;
+margin-right:3px; /*spacing between each thumbnail*/
+}
+
+ul.fpthumbs li:last-child {
+	margin: 0;
+}
+
+ul.fpthumbs li img{
+cursor:pointer;
+width:110px !important;
+height:60px !important;
+}
+
+ul.fpthumbs li img.selected{
+border-color:red;
+}
+
+div.first, div.scnd {
+	display: none;
+}
+
+body.slider > div {
+	float: right;
+}
+
+div.slider {
+	position: absolute; 
+	right: 15px;
+	top: 15px;
+	width: 911px;
+	height:100%;
+	overflow:hidden;
+}
+
+div.slider > img {
+	width: 921px !important;
+	height: 518px !important;
+	left: 0px !important;
+	padding-bottom: 20px;
+	background: url(../images/bottomBorder.png) center bottom no-repeat;
+}
+
+section.text,
+section.share {
+	color: #fff;
+	width: 300px;
+	margin: 45px 45px 15px;
+	text-align: justify;
+	padding-bottom: 15px;
+	background: url(../images/textShadow.png) center bottom no-repeat;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+section.text h1,
+section.share h1 {
+	font: normal 17px Arial, Helvetica, sans-serif;
+}
+
+section.share {
+	margin-top: 0;
+}
+
+section.share h1 {
+	padding: 0;
+	margin: 0 0 10px;
+	font: normal 13px Arial, Helvetica, sans-serif;
+}
+
+/*section.share a {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	font-size: 0;
+	background: url(../images/shareIcons.png);
+}*/
+
+section.share a.twitter {
+	background-position: -41px 0;
+}
+
+section.share a.linkedin {
+	background-position: -80px 0;
+}
+
+section.share a.gplus {
+	background-position: -119px 0;
+}
+
+section.share a.yahoo {
+	background-position: -157px 0;
+}
+
+section.share a.utube {
+	background-position: -159px 0;
+}
+
+section.share a.rss {
+	background-position: -233px 0;
+}
