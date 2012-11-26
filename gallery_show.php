@@ -41,6 +41,8 @@ if (isset($_GET['post_id'])) {
         ],
         desc: []
     } 
+    
+    var timthumpPath = '<? echo plugins_url() ?>/objects gallery/timthumb.php';
         </script>
 
 
