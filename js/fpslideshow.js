@@ -8,7 +8,7 @@ var fullpageslideshow={
 		var slideshow=this, imagesarr=this.imagesarr, thumbs=this.thumbs, templayer=this.templayer, setting=this.setting, imagecount=0
 		function createthumbnail(i, imageref, thumbref){
 			var thumbimgsrc=(setting.imagesobj.baseurl)? setting.thumbdir+setting.imagesobj.images[i][1] : imageref.src
-			thumbref.html('<img src="'+thumbimgsrc+'" style="width:'+setting.thumbdimensions[0]+'px;height:'+setting.thumbdimensions[1]+'px" />')
+			thumbref.html('<img src="'+timthumpPath+'?src='+thumbimgsrc+'&amp;w=110&amp;h=60&amp;zc=0&amp;q=100'+'" style="width:'+setting.thumbdimensions[0]+'px;height:'+setting.thumbdimensions[1]+'px" />')
 			thumbref.find('img:eq(0)').css({opacity:0.3})
 		}
 		function process(i, imageref, thumbref){
